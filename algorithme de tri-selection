@@ -5,7 +5,7 @@ saisir(n)
 remplir(t,n)
 affichage(t,n)
 tri(t,n)
-affichage(tn)
+affichage(t,n)
 fin
 ┌───────────────────────────────────────────────────────────┐
 │                      TDNT                                 │
