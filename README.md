@@ -1,4 +1,4 @@
-Absolument. Voici une description détaillée et technique de l'algorithme de tri par sélection, sans simplification.
+
 
 ### Description Détaillée du Tri par Sélection
 
