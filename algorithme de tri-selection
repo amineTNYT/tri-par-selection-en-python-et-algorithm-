@@ -1,16 +1,103 @@
-Procédure tri_selection (@ t : tab; n : entier)
+algorithme tri-selection
+p.p
+début
+saisir(n)   
+remplir(t,n)
+affichage(t,n)
+tri(t,n)
+affichage(tn)
+fin
+┌───────────────────────────────────────────────────────────┐
+│                      TDNT                                 │
+├───────────────────────────────────────────────────────────│
+│ tab = tableau de N entier                                 │
+└───────────────────────────────────────────────────────────┘
+                                 
+                                                                            TDOG
+                                                ┌──────────────────────────────────┬────────────────────────┐
+                                                │               Objet              │      Nature / Type     │
+                                                ├──────────────────────────────────┼────────────────────────┤
+                                                │ n                                │ entier                 │
+                                                ├──────────────────────────────────┼────────────────────────┤
+                                                │ t                                │ tab                    │
+                                                ├──────────────────────────────────┼────────────────────────┤
+                                                │ tri,saisir,remplir,affichage,tri │ procédure              │
+                                                └──────────────────────────────────┴────────────────────────┘
+procédure saisir(@n:entier)
+début 
+répéter
+ecrire("donner taille du tableau: ")   
+lire(n) 
+jusqu'à 3 <n<8
+fin
+
+procédure remplir(@t:tab,n:entier)
+début
+pour i de 0 à n-1 faire 
+     lire(t[i])
+fin_pour 
+fin
+                                                                                                 TDOL
+                                                                ┌──────────────────────────────────┬────────────────────────┐
+                                                                │               Objet              │      Nature / Type     │
+                                                                ├──────────────────────────────────┼────────────────────────┤
+                                                                │ i                                │ entier                 │
+                                                                └──────────────────────────────────┴────────────────────────┘
+
+p
+procédure affichage(t:tab,n:entier)
+début 
+pour i de 0 à n-1 faire
+    ecrire(t[i])
+fin_pour
+fin                                               TDOL
+                ┌──────────────────────────────────┬────────────────────────┐
+                │               Objet              │      Nature / Type     │
+                ├──────────────────────────────────┼────────────────────────┤
+                │ i                                │ entier                 │
+                └──────────────────────────────────┴────────────────────────┘
+
+procédure tri(t,n)
 Début
 Pour i de 0 à n-2 faire
       pMin ← i
       Pour j de i+1 à n-1 faire
             Si (t[j] < t[pMin]) alors
-            pMin ← j
+                    pMin ← j
             Fin si
-      Fin pour
+        Fin pour                                   
 Si (i ≠ pMin) alors
-      aux ← t[i]
-      t[i] ← t[pMin]
-      t[pMin] ← aux
-      Fin si
+    aux ← t[i]
+    t[i] ← t[pMin]
+    t[pMin] ← aux
+Fin si
 Fin pour
-Fin
+Fin                                                                          TDOL
+                                            ┌──────────────────────────────────┬────────────────────────┐
+                                            │               Objet              │      Nature / Type     │
+                                            ├──────────────────────────────────┼────────────────────────┤
+                                            │ i,j,aux,pmin                     │ entier                 │
+                                            ├──────────────────────────────────┼────────────────────────┤
+
+
+
+
+
+
+
+
+
+EXAMPLE
+Donner la taille du tableau : 4
+Remplissage du tableau :
+t[0] = 8
+t[1] = 77
+t[2] = 1
+t[3] = 15
+
+Le tableau avant le tri :
+8 | 77 | 1 | 15 | 
+
+Le tableau après le tri :
+1 | 8 | 15 | 77 | 
+
