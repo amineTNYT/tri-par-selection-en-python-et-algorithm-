@@ -21,3 +21,7 @@ L'algorithme procède en deux boucles imbriquées et opère *en place*, c'est-à
 
 **Tableau trié :**
 `t = [1, 8, 77]`
+
+
+https://github.com/user-attachments/assets/ebd35f58-287f-484c-9544-b39670498db3
+
