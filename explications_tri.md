@@ -41,10 +41,10 @@ Si `t` contient :
 **Exemple :**
 ```pascal
 // Pour un tableau d'entiers
-aux: entier
+aux: entier(aux=0)
 
 // Pour un tableau de caractères
-aux: caractère
+aux: caractère(aux="")
 
 // Pour un tableau de nombres réels
 aux: réel
