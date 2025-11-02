@@ -2,9 +2,11 @@
 
 ### Description Détaillée du Tri par Sélection
 
-Le tri par sélection est un algorithme de tri par comparaison, **instable** et de complexité quadratique. Son principe fondamental est de construire séquentiellement la séquence triée en sélectionnant itérativement le plus petit (ou le plus grand) élément restant dans le sous-tableau non trié et de le placer à sa position finale correcte.
+**Tri par sélection**
+Algorithme de tri **instable** et de complexité quadratique O(n²). Son principe est simple : à chaque étape, il sélectionne le plus petit élément restant dans la partie non triée et le place directement à sa position finale.
 
-L'algorithme procède en deux boucles imbriquées et opère *en place*, c'est-à-dire sans nécessiter de tableau auxiliaire. Il considère le tableau comme étant divisé en deux parties virtuelles : un préfixe (ou une partie gauche) qui est trié et un suffixe (ou une partie droite) qui reste à trier. Initialement, la partie triée est vide.
+**Fonctionnement**
+L'algorithme opère **en place** avec deux boucles imbriquées. Il divise virtuellement le tableau en deux parties : une partie gauche triée (initialement vide) et une partie droite non triée. À chaque itération, la partie triée s'agrandit d'un élément.
 
 **Tableau initial :**
 `t = [8, 77, 1]`
