@@ -25,3 +25,28 @@ L'algorithme procède en deux boucles imbriquées et opère *en place*, c'est-à
 
 https://github.com/user-attachments/assets/ebd35f58-287f-484c-9544-b39670498db3
 
+**Note Importante sur la Variable `aux` :**
+
+La déclaration de `aux` **dépend du type des éléments dans le tableau `t`**.
+
+Si `t` contient :
+- **Entiers** → `aux` doit être `entier`
+- **Caractères** → `aux` doit être `caractère`
+- **Chaînes de caractères** → `aux` doit être `chaine`
+- **Nombres réels** → `aux` doit être `réel`
+- **Objets personnalisés** → `aux` doit correspondre au type d'objet
+
+**Exemple :**
+```pascal
+// Pour un tableau d'entiers
+aux: entier
+
+// Pour un tableau de caractères
+aux: caractère
+
+// Pour un tableau de nombres réels
+aux: réel
+```
+
+**Toujours déclarer `aux` avec le même type de données que les éléments du tableau** pour éviter les erreurs de type lors des opérations d'échange.
+
